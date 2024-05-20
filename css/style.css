@@ -1,0 +1,277 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background-image: url(/img/mountains-8314422_1920.png);
+    background-position: center;
+    background-size: cover;
+    overflow-y: hidden;
+}
+
+.header {
+    width: 100%;
+    background-color: rgba(255, 255, 255, .4);
+    background-color: rgba(0, 0, 0, .6);
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.header p {
+    text-align: center;
+    font-size: 22px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.main {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    padding-top: 15px;
+    flex-wrap: wrap;
+    gap: 20px;
+    overflow: auto;
+}
+
+.add-container {
+    height: 195px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, .4);
+    border: 1px solid black;
+    border-radius: 10px;
+    opacity: .5;
+}
+
+.add-container img {
+    width: 70px;
+}
+
+.add-container:hover {
+    opacity: .9;
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+.article-img {
+    height: 195px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, .4);
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+}
+
+.article-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    text-align: center;
+}
+.article-img .img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    text-align: center;
+}
+
+.article-text {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.article-text p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.add-dataImg {
+    background-color: rgba(255, 255, 255, .6);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Itim", cursive;
+}
+
+.dataImg-container {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.dataTravel-img {
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dataTravel-img div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 20px;
+    width: 50px;
+}
+.dataTravel-img div img {
+    width: 80%;
+}
+.dataTravel-img div:hover {
+    cursor: pointer;
+}
+.dataTravel-img > img {
+    width: 150px;
+}
+
+.dataTravel-text {
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    row-gap: 10px;
+    margin-top: 30px;
+}
+.dataTravel-text div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+    padding-bottom: 7px;
+    margin-bottom: 5px;
+    width: 95vw;
+    max-width: 300px;
+    border-bottom: 2px solid black;
+    border-radius: 10px;
+}
+.dataTravel-text label {
+    font-size: 18px;
+    width: 100px;
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.dataTravel-text input {
+    font-size: 18px;
+    text-align: center;
+}
+
+.agregarImgWeb, .agregarImgDesktop {
+    margin-top: 30px;
+    width: 90px;
+    padding: 5px;
+    font-family: "Itim", cursive;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.agregarImgWeb:hover {
+    cursor: pointer;
+}
+.agregarImgDesktop:hover {
+    cursor: pointer;
+}
+.button-salir {
+    position: absolute;
+    right: 50vw;
+    top: -3vh;
+}
+.button-salir button:hover {
+    cursor: pointer;
+}
+.button-salir button {
+    width: 30px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+}
+.button-salir button img {
+    width: 100%;
+}
+
+@media (min-width: 600px) {
+    .article-img {
+        height: 390px;
+        width: 240px;
+        transition: 2s;
+    }
+
+    .add-container {
+        height: 390px;
+        width: 240px;
+        transition: 2s;
+    }
+
+    .add-container img {
+        width: 140px;
+        transition: 2s;
+    }
+}
+
+
+.display {
+    display: none;
+}
+
+.input-imgDesktop {
+    overflow: hidden;
+}
+.input-imgDesktop input {
+    margin-left: 150px;
+}
+
+.article-img {
+    position: relative;
+}
+.clear {
+    position: absolute;
+    top: -10px;
+    right: -25px;
+    width: 30px;
+    border-radius: 10px;
+    padding: 5px;
+}
+.clear img {
+    z-index: -4;
+}
+.clear:hover {
+    cursor: pointer;
+}
