@@ -11,7 +11,7 @@ body {
     flex-direction: column;
     align-items: center;
     position: relative;
-    background-image: url(/img/mountains-8314422_1920.png);
+    background-image: url(https://cdn.pixabay.com/photo/2023/10/14/09/20/mountains-8314422_960_720.png);
     background-position: center;
     background-size: cover;
     overflow-y: hidden;
